@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SalesForce Automation Test Suite">
+
+    <listeners>
+		<listener class-name="com.salesforce.ExtentReportListener.ExtentReportListener" />
+		
+	</listeners>
+
+  <test  name="SalesForceTestCases">
+    
+    <classes> 
+    <class name = "com.salesforce.tests.LoginPageTest"></class>
+    <class name = "com.salesforce.tests.HomePageTest"></class>
+    </classes>
+   </test> <!-- Test -->
+</suite> <!-- Suite -->

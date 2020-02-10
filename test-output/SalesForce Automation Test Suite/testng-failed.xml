@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SalesForce Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.salesforce.ExtentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="SalesForceTestCases(failed)">
+    <classes>
+      <class name="com.salesforce.tests.HomePageTest">
+        <methods>
+          <include name="LogoutTest"/>
+          <include name="teardown"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.salesforce.tests.HomePageTest -->
+    </classes>
+  </test> <!-- SalesForceTestCases(failed) -->
+</suite> <!-- Failed suite [SalesForce Automation Test Suite] -->
